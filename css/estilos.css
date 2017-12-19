@@ -1,21 +1,3 @@
-body{
-  font-family: 'Dancing Script', cursive;
-  background: #02010a;
-}
-
-header{
-  background: #5b7989;
-  border-radius: 10px 10px 0px 0px;
-  padding: 2vh;
-  overflow: hidden;
-}
-
-h1{
-  color:white;
-  text-shadow: 2px 2px #02010a;
-  padding: 1vh;
-}
-
 @media (max-width: 900px) {
   #contenido{
     width: 100%;
@@ -24,6 +6,11 @@ h1{
   header{
     text-align: center;
   }
+
+  div.bloque{
+    padding: 5%;
+  }
+
 }
 
 @media (min-width: 900px) {
@@ -33,7 +20,7 @@ h1{
   }
 
   header{
-    height: 60px;
+    padding: 3vh;
   }
 
   h1{
@@ -44,23 +31,92 @@ h1{
   nav{
     float: right;
   }
+
+  #imagen-secundaria {
+    display: flex;
+    flex-flow: row nowrap;
+  }
+}
+
+body{
+  font-family: 'Dancing Script', cursive;
+  background: #02010a;
+}
+
+header{
+  background: #5b7989;
+  border-radius: 10px 10px 0px 0px;
+  overflow: hidden;
+}
+
+h1{
+  color:white;
+  text-shadow: 2px 2px #02010a;
+  padding: 1vh;
+}
+
+ul{
+  padding: 0;
 }
 
 li {
   display: inline;
-  padding: 1vh;
+  padding: 2vh;
 }
 
 li a {
   color: white;
   text-align: center;
   font-size: 1.2em;
+  font-weight: bold;
 }
 
-li a:active {
+.active {
   text-decoration: none;
 }
 
-#imagen-centrada{
+img {
+  box-shadow: 2px 2px #02010a;
+  width: 90%;
+}
+
+p {
+  font-size: 1.2em;
+  font-weight: bold;
+  margin: 0;
+}
+
+#imagen-central {
   background: #82c3a6;
+}
+
+#imagen-secundaria {
+  background: #d5c75f;
+  border: 1px;
+  text-decoration: underline;
+}
+
+#izq:hover {
+  -ms-transform: rotate(10deg);
+  -webkit-transform: rotate(10deg);
+  -moz-transform: rotate(10deg);
+  transform: rotate(10deg);
+  -webkit-transition: -webkit-transform 1s;
+  transition: transform 1s;
+  box-shadow:2px 2px #82c3a6;
+}
+
+#der:hover {
+  -ms-transform: translate(20px, -5px);
+  -webkit-transform: translate(20px, -5px);
+  -moz-transform: translate(20px, -5px);
+  transform: translate(20px, -5px);
+  -webkit-transition: -webkit-transform 1s;
+  transition: transform 1s;
+  box-shadow:2px 2px #82c3a6;
+}
+
+.bloque {
+  padding: 2.5%;
+  text-align: center;
 }
