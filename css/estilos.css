@@ -70,6 +70,12 @@
   }
 }
 
+@keyframes slidein {
+    0%   {margin-top: 150%;}
+    60%  {margin-top: -5%;}
+    100% {margin-top: 0%;}
+}
+
 body{
   font-family: 'Dancing Script', cursive;
   background: #02010a;
@@ -79,6 +85,8 @@ header{
   background: #5b7989;
   border-radius: 10px 10px 0px 0px;
   overflow: hidden;
+  animation-name: slidein;
+  animation-duration: 1s;
 }
 
 h1{
