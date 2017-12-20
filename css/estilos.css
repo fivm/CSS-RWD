@@ -7,12 +7,12 @@
     text-align: center;
   }
 
-  div.bloque{
-    padding: 5%;
-  }
-
   h2{
     margin: 0;
+  }
+
+  div.bloque{
+    padding: 5%;
   }
 
   .columna {
