@@ -14,8 +14,13 @@
   h2{
     margin: 0;
   }
+
   .columna {
-    padding: 5% 10% 5% 10% ;
+    padding: 2vh 10%;
+  }
+
+  .imagen-galeria {
+    padding: 2%
   }
 
 }
@@ -48,9 +53,20 @@
     display: flex;
     flex-flow: row nowrap;
   }
+
   .columna {
     width: 25%;
     padding: 0 5% 2% 5% ;
+  }
+
+  #galeria {
+    display: flex;
+    flex-flow: row wrap;
+  }
+
+  .imagen-galeria {
+    width: 31%;
+    padding: 1%
   }
 }
 
@@ -71,27 +87,27 @@ h1{
   padding: 1vh;
 }
 
-ul{
+#menu ul{
   padding: 0;
 }
 
-li {
+#menu li {
   display: inline;
   padding: 2vh;
 }
 
-li a {
+#menu li a {
   color: white;
   text-align: center;
   font-size: 1.2em;
   font-weight: bold;
 }
 
-.active {
+#menu .active {
   text-decoration: none;
 }
 
-img {
+div> img {
   box-shadow: 2px 2px #02010a;
   width: 90%;
 }
@@ -139,4 +155,42 @@ p {
 
 footer {
   background: #C6d5c5;
+  border-radius: 0px 0px 10px 10px;
+}
+
+#galeria {
+  background: #d5c75f;
+  text-align: center;
+  padding: 2%
+}
+
+#img1 {
+  -webkit-filter: blur(10px);
+  filter: blur(10px);
+}
+
+.pares{
+  -webkit-filter: grayscale(100%);
+  filter: grayscale(100%);
+}
+
+#img3{
+  -webkit-filter: sepia(90%);
+  filter: sepia(90%);
+}
+
+#social {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+#social li a{
+  text-decoration: none;
+}
+
+.icon {
+  width: 15px;
+  height: 15px;
+  margin: 0 10px 0 0;
 }
